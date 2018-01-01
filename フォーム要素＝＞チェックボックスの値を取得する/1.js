@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // 選択値を格納するための配列
         var result = [];
-        var foods = document.getElementsByName('food'); // チェックボックスの全てのname属性を一緒にしておくことがミソ!!
+         // チェックボックスの全てのname属性を一緒にしておくことがミソ!!
+         // すべてのname属性を取得するのはgetElementsByNameメソッドになるので注意!!
+        var foods = document.getElementsByName('food');
 
         for(var i = 0; i < foods.length; i++) {
             var food = foods.item(i);　// すべての要素を取得する(for分ループ + item(i)=>i番目の要素を取得)
